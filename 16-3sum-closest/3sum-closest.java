@@ -8,9 +8,9 @@ class Solution {
             int k=nums.length-1;
             while(j<k){
                 int sum = nums[i]+nums[j]+nums[k];
-                int diff = Math.abs(sum-target);
+               
 
-                if(diff< Math.abs(resultsum-target)){
+                if(Math.abs(sum-target)< Math.abs(resultsum-target)){
                     resultsum = sum;     
                 }
                 if(sum==target){
